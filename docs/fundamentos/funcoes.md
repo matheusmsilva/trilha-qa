@@ -1,6 +1,6 @@
 ---
 title: Funções
-description: Do zero aos padrões usados em automação: declaração, expressão, arrow functions, escopo, closures e visão de código assíncrono em JavaScript.
+description: "Do zero aos padrões usados em automação: declaração, expressão, arrow functions, escopo, closures e visão de código assíncrono em JavaScript."
 ---
 
 # Funções em JavaScript
