@@ -8,9 +8,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 // --- GitHub Pages (projeto em https://<usuário>.github.io/<repositório>/) ---
 // Na GitHub Actions, GITHUB_REPOSITORY_OWNER e GITHUB_REPOSITORY vêm preenchidos.
 // Em desenvolvimento local, `baseUrl` fica "/" e `url` em localhost.
-// Se quiser links "Editar no GitHub" corretos no `npm start`, defina no terminal, por exemplo:
-//   setx GITHUB_REPOSITORY_OWNER "seuUsuario"   (Windows, novo terminal depois)
-// ou substitua o fallback `SEU_USUARIO_GITHUB` abaixo pelo seu usuário ou organização.
 const repoFull = process.env.GITHUB_REPOSITORY;
 const [repoOwnerFromEnv, repoNameFromEnv] = repoFull?.split('/') ?? [];
 
@@ -27,8 +24,6 @@ const siteUrl = githubPagesBuild
   : 'http://localhost:3000';
 
 const siteBaseUrl = githubPagesBuild ? `/${githubRepo}/` : '/';
-
-const githubRepoUrl = `https://github.com/${githubOrg}/${githubRepo}`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -62,7 +57,6 @@ const config = {
           routeBasePath: '/',
           path: 'docs',
           sidebarPath: './sidebars.js',
-          editUrl: `${githubRepoUrl}/tree/main/`,
         },
         blog: false,
         theme: {
@@ -92,11 +86,6 @@ const config = {
             position: 'left',
             label: 'Documentação',
           },
-          {
-            href: githubRepoUrl,
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -125,15 +114,6 @@ const config = {
               {
                 label: 'X',
                 href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: githubRepoUrl,
               },
             ],
           },

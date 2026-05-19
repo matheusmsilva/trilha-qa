@@ -10,7 +10,7 @@ Imagine que você escreve a mesma conta ou a mesma checagem em vários lugares d
 Nesta página você vai ver, em ordem:
 
 1. O que toda função tem (nome, parâmetros, corpo, retorno).
-2. **Função declarada** e o que é *hoisting*.
+2. **Função declarada** e o que é _hoisting_.
 3. **Função expressa** (guardada em variável) e diferença prática em relação à declarada.
 4. **Arrow function** (`=>`) e o cuidado com `this`.
 5. **Valores padrão** de parâmetros.
@@ -27,14 +27,14 @@ Se algum termo for novo, não se preocupe: cada seção explica o vocabulário n
 
 ## Palavras que vamos usar o tempo todo
 
-| Termo | Significado em uma frase |
-| ----- | ------------------------- |
-| **Declarar** a função | Escrever a função (o “molde”). |
-| **Chamar** / **invocar** a função | Usar `nomeDaFuncao()` para rodar o corpo. |
-| **Parâmetro** | Nome “de encaixe” na declaração: `function somar(a, b)` → `a` e `b` são parâmetros. |
-| **Argumento** | Valor que você passa na chamada: `somar(2, 3)` → `2` e `3` são argumentos. |
-| **Retorno** (`return`) | Valor que a função **entrega** para quem chamou. Sem `return`, o resultado é `undefined`. |
-| **Corpo** | Tudo que fica entre `{` e `}` (o que roda quando você chama a função). |
+| Termo                             | Significado em uma frase                                                                  |
+| --------------------------------- | ----------------------------------------------------------------------------------------- |
+| **Declarar** a função             | Escrever a função (o “molde”).                                                            |
+| **Chamar** / **invocar** a função | Usar `nomeDaFuncao()` para rodar o corpo.                                                 |
+| **Parâmetro**                     | Nome “de encaixe” na declaração: `function somar(a, b)` → `a` e `b` são parâmetros.       |
+| **Argumento**                     | Valor que você passa na chamada: `somar(2, 3)` → `2` e `3` são argumentos.                |
+| **Retorno** (`return`)            | Valor que a função **entrega** para quem chamou. Sem `return`, o resultado é `undefined`. |
+| **Corpo**                         | Tudo que fica entre `{` e `}` (o que roda quando você chama a função).                    |
 
 :::tip Parâmetro ≠ argumento
 
@@ -82,15 +82,14 @@ function saudacao(nome) {
 console.log(saudacao("João")); // Olá, João!
 ```
 
-### *Hoisting* (elevação) — o que é, sem mistério
+### Hoisting
 
-Em JavaScript, **declarações** `function nome() { ... }` sofrem um efeito chamado ***hoisting*** (“elevação”): o **nome** da função passa a existir para o motor do JavaScript em **todo** o escopo do bloco onde ela foi declarada, **mesmo** que a linha `function ...` apareça mais abaixo no arquivo.
+Em JavaScript, **declarações** `function nome() { ... }` sofrem um efeito chamado **_hoisting_** (“elevação”): o **nome** da função passa a existir para o motor do JavaScript em **todo** o escopo do bloco onde ela foi declarada, **mesmo** que a linha `function ...` apareça mais abaixo no arquivo.
 
-:::note Estilo recomendado
+Estilo recomendado
 
-Isso **não** é convite para bagunçar o arquivo: mesmo com *hoisting*, o mais legível é **declarar antes de usar**. Entender o *hoisting* ajuda a ler código legado e mensagens de erro, não a escrever código confuso de propósito.
+Isso **não** é convite para bagunçar o arquivo: mesmo com _hoisting_, o mais legível é **declarar antes de usar**. Entender o _hoisting_ ajuda a ler código legado e mensagens de erro, não a escrever código confuso de propósito.
 
-:::
 
 ### Exemplo: validação simples (comum em testes)
 
@@ -121,11 +120,11 @@ console.log(saudacao("Maria")); // Olá, Maria!
 
 ### Diferença importante em relação à declarada
 
-Não há o mesmo *hoisting* “amigável” da forma anterior: **só faz sentido chamar depois** da linha em que `const saudacao = ...` apareceu. Se você tentar usar antes, pode tomar erro de “não pode acessar antes da inicialização” (em `const`/`let`).
+Não há o mesmo _hoisting_ “amigável” da forma anterior: **só faz sentido chamar depois** da linha em que `const saudacao = ...` apareceu. Se você tentar usar antes, pode tomar erro de “não pode acessar antes da inicialização” (em `const`/`let`).
 
-### Função expressa **nomeada** (útil em *stacks* de erro)
+### Função expressa **nomeada** (útil em _stacks_ de erro)
 
-Você pode dar um nome **interno** à função anônima. Isso melhora mensagens de erro e *stack traces*:
+Você pode dar um nome **interno** à função anônima. Isso melhora mensagens de erro e _stack traces_:
 
 ```js
 const multiplicar = function fator(a, b) {
@@ -156,7 +155,7 @@ const somar = (a, b) => {
 
 ### Quando ter cuidado (conceito de `this`)
 
-Arrow functions **não** têm seu próprio `this`: elas **herdam** o `this` do contexto em que foram **criadas** (léxico). Em **classes** ou em alguns *handlers* do DOM, isso pode surpreender se você esperava o `this` “do jeito antigo”.
+Arrow functions **não** têm seu próprio `this`: elas **herdam** o `this` do contexto em que foram **criadas** (léxico). Em **classes** ou em alguns _handlers_ do DOM, isso pode surpreender se você esperava o `this` “do jeito antigo”.
 
 :::tip Regra prática para iniciante
 
@@ -190,7 +189,7 @@ console.log(montarUrl("https://api.exemplo.com/")); // https://api.exemplo.com
 Na prática do dia a dia:
 
 - arrays: `map`, `filter`, `reduce` recebem uma função;
-- assincronia: muitas APIs recebem *callbacks* ou retornam *Promises* que você encadeia com `.then`.
+- assincronia: muitas APIs recebem _callbacks_ ou retornam _Promises_ que você encadeia com `.then`.
 
 ### Exemplo mínimo: receber uma função
 
@@ -236,7 +235,7 @@ executarDepois(1000, () => {
 });
 ```
 
-Em projetos reais de teste e API, o fluxo moderno costuma usar **`async`/`await`** com *Promises* (você verá com calma no módulo de APIs). O ponto desta seção é só **reconhecer o desenho**: “eu passo uma função que será rodada quando X terminar”.
+Em projetos reais de teste e API, o fluxo moderno costuma usar **`async`/`await`** com _Promises_ (você verá com calma no módulo de APIs). O ponto desta seção é só **reconhecer o desenho**: “eu passo uma função que será rodada quando X terminar”.
 
 ```js
 async function buscarStatus(url) {
@@ -248,7 +247,7 @@ async function buscarStatus(url) {
 // const status = await buscarStatus('https://httpbin.org/status/200');
 ```
 
-`fetch` retorna uma *Promise*; `await` “pausa” a `async function` até o resultado chegar, sem travar a interface no navegador.
+`fetch` retorna uma _Promise_; `await` “pausa” a `async function` até o resultado chegar, sem travar a interface no navegador.
 
 ---
 
@@ -275,16 +274,16 @@ contagemRegressiva(3);
 
 :::note Cuidado com pilha
 
-Cada chamada recursiva ocupa espaço na **pilha** de execução. Recursão sem parada vira estouro de pilha (*stack overflow*). Em automação do cotidiano, muitas vezes um `for` ou um `reduce` resolve com menos “magia” — mas **saber ler** recursão continua importante.
+Cada chamada recursiva ocupa espaço na **pilha** de execução. Recursão sem parada vira estouro de pilha (_stack overflow_). Em automação do cotidiano, muitas vezes um `for` ou um `reduce` resolve com menos “magia” — mas **saber ler** recursão continua importante.
 
 :::
 
 ---
 
-## Escopo e *closure* (resumo honesto)
+## Escopo e _closure_ (resumo honesto)
 
 - **Escopo** responde: “em que parte do código essa variável **existe** e pode ser lida?”
-- **Closure** (*fechamento*): uma função interna “**lembra**” variáveis da função externa **mesmo depois** que a externa terminou de rodar.
+- **Closure** (_fechamento_): uma função interna “**lembra**” variáveis da função externa **mesmo depois** que a externa terminou de rodar.
 
 ```js
 function criarContador() {
@@ -300,40 +299,30 @@ console.log(proximo()); // 1
 console.log(proximo()); // 2
 ```
 
-Isso ajuda a **encapsular estado** (o `n` não vira global) — padrão útil em libs e em código mais avançado; em testes iniciantes você vê menos, mas aparece em *fixtures* e *factories*.
+Isso ajuda a **encapsular estado** (o `n` não vira global) — padrão útil em libs e em código mais avançado; em testes iniciantes você vê menos, mas aparece em _fixtures_ e _factories_.
 
 ---
 
 ## Boas práticas (especialmente em código de teste)
 
-| Prática | Motivo |
-| ------- | ------ |
-| Nomes de função como **verbos** (`calcularTotal`, `parsearResposta`) | Quem lê entende **o que acontece** sem abrir o corpo |
-| Uma responsabilidade por função | Quando quebra, você sabe **onde** olhar |
-| Evitar funções enormes | Quebre em passos com nomes (`montarPayload`, `validarSchema`, …) |
-| Preferir `const` para referências a funções | Evita reassinar sem querer |
-| Testar a função isoladamente | Ajuda TDD e evita regressão |
-
----
-
-## Funções e TDD (lembrete)
-
-**TDD** (*Test-Driven Development*) é escrever **antes** um teste que descreve o comportamento desejado da função e só então implementar o **mínimo** para o teste passar. Funções **pequenas** e, quando possível, **puras** (mesma entrada → mesma saída, sem efeitos colaterais desnecessários) são mais fáceis de cobrir com testes unitários e de manter quando o projeto cresce.
-
----
+| Prática                                                              | Motivo                                                           |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Nomes de função como **verbos** (`calcularTotal`, `parsearResposta`) | Quem lê entende **o que acontece** sem abrir o corpo             |
+| Uma responsabilidade por função                                      | Quando quebra, você sabe **onde** olhar                          |
+| Evitar funções enormes                                               | Quebre em passos com nomes (`montarPayload`, `validarSchema`, …) |
+| Preferir `const` para referências a funções                          | Evita reassinar sem querer                                       |
+| Testar a função isoladamente                                         | Ajuda TDD e evita regressão                                      |
 
 ## Resumo (guarde esta lista)
 
-| Tipo / ideia | O que lembrar |
-| ------------ | ------------- |
-| **Declarada** `function f() {}` | Nome sofre *hoisting* no escopo; boa para “função nomeada clássica” |
-| **Expressa** `const f = function () {}` | Função como valor; ordem de leitura importa |
-| **Arrow** `(x) => x` | Curta; cuidado com `this` |
-| **Padrão de parâmetro** `path = ""` | Evita `undefined` em argumentos opcionais |
-| **Ordem superior** | Recebe ou retorna função; base de `map` e de muito código assíncrono |
-| **Callback** | “Me liga quando terminar” |
-| **`async`/`await`** | Açúcar sintático em cima de *Promise*; aprofunde na trilha de APIs |
-| **Recursão** | Chama a si mesma com **parada** clara |
-| **Closure** | Função interna lembra variáveis da externa |
-
-Com isso, você ganha base para organizar helpers de teste, evitar repetição e ler código de frameworks que recebem funções como argumento — e sabe **onde** aprofundar em seguida (APIs assíncronas, DOM, classes).
+| Tipo / ideia                            | O que lembrar                                                        |
+| --------------------------------------- | -------------------------------------------------------------------- |
+| **Declarada** `function f() {}`         | Nome sofre _hoisting_ no escopo; boa para “função nomeada clássica”  |
+| **Expressa** `const f = function () {}` | Função como valor; ordem de leitura importa                          |
+| **Arrow** `(x) => x`                    | Curta; cuidado com `this`                                            |
+| **Padrão de parâmetro** `path = ""`     | Evita `undefined` em argumentos opcionais                            |
+| **Ordem superior**                      | Recebe ou retorna função; base de `map` e de muito código assíncrono |
+| **Callback**                            | “Me liga quando terminar”                                            |
+| **`async`/`await`**                     | Açúcar sintático em cima de _Promise_; aprofunde na trilha de APIs   |
+| **Recursão**                            | Chama a si mesma com **parada** clara                                |
+| **Closure**                             | Função interna lembra variáveis da externa                           |

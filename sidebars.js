@@ -11,11 +11,8 @@ const sidebars = {
     {
       type: "category",
       label: "Fundamentos e lógica de programação",
-      link: {
-        type: "doc",
-        id: "fundamentos/algoritmos",
-      },
       items: [
+        "fundamentos/visao-geral",
         "fundamentos/algoritmos",
         "fundamentos/variaveis",
         "fundamentos/estruturas-condicionais",
@@ -31,8 +28,10 @@ const sidebars = {
         id: "ambiente-automacao/visao-geral",
       },
       items: [
-        "ambiente-automacao/visao-geral",
-        "ambiente-automacao/ferramentas-e-versoes",
+        "ambiente-automacao/instalacao-node",
+        "ambiente-automacao/instalacao-vscode",
+        "ambiente-automacao/instalacao-git",
+        "ambiente-automacao/executar-javascript",
         "ambiente-automacao/repositorio-e-estrutura",
       ],
     },
@@ -44,7 +43,6 @@ const sidebars = {
         id: "automacao-apis/requisicoes-get",
       },
       items: [
-        "automacao-apis/requisicoes-get",
         "automacao-apis/requisicoes-post",
         "automacao-apis/headers-e-autenticacao",
       ],

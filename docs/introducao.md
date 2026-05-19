@@ -213,4 +213,4 @@ Automação é uma habilidade construída com repetição e prática contínua.
 
 ## Próximos passos
 
-Comece por **Algoritmos** e avance sequencialmente até fechar os fundamentos; depois siga para o módulo de APIs.
+Comece pela **Visão geral** dos fundamentos, depois por **Algoritmos**, e avance na ordem da sidebar até fechar o módulo; em seguida siga para **Ambiente de automação** e, mais adiante, **Automação de APIs**.
