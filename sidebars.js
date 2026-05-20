@@ -18,6 +18,7 @@ const sidebars = {
         "fundamentos/estruturas-condicionais",
         "fundamentos/estruturas-de-repeticao",
         "fundamentos/funcoes",
+        "fundamentos/objetos",
       ],
     },
     {

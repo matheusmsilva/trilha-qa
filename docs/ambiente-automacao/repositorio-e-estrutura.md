@@ -32,7 +32,8 @@ trilha-qa-exercicios/
 │   ├── variaveis.js
 │   ├── estruturas-condicionais.js
 │   ├── estruturas-de-repeticao.js
-│   └── funcoes.js
+│   ├── funcoes.js
+│   └── objetos.js
 ```
 
 Conforme avançar para outros módulos (Automação de APIs, Web, etc.), crie pastas no mesmo padrão — por exemplo `automacao-apis/` — com arquivos alinhados aos tópicos estudados.
@@ -180,6 +181,7 @@ Use esta tabela ao estudar **Fundamentos e lógica de programação**:
 | Estruturas condicionais | `estruturas-condicionais.js` |
 | Estruturas de repetição | `estruturas-de-repeticao.js` |
 | Funções | `funcoes.js` |
+| Objetos | `objetos.js` |
 
 Cada vez que concluir exercícios de um tópico, abra (ou crie) o arquivo correspondente e adicione um novo bloco comentado no final.
 
