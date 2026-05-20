@@ -19,6 +19,7 @@ const sidebars = {
         "fundamentos/estruturas-de-repeticao",
         "fundamentos/funcoes",
         "fundamentos/objetos",
+        "fundamentos/arrays",
       ],
     },
     {
