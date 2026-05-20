@@ -33,7 +33,7 @@ Sem Node e npm, não dá para instalar Playwright nem rodar os projetos prático
 | [Instalação do Visual Studio Code](./instalacao-vscode.md) | Instalar o editor, abrir projetos, terminal integrado e extensões úteis. |
 | [Instalação do Git](./instalacao-git.md) | Instalar o Git, configurar nome e e-mail e validar no terminal. |
 | [Executar arquivos JavaScript](./executar-javascript.md) | Rodar arquivos `.js` no terminal com `node` e praticar com um exemplo. |
-| [Repositório e estrutura de pastas](./repositorio-e-estrutura.md) | Organização do projeto, pastas de testes e boas práticas de versionamento. |
+| [Repositório e estrutura de pastas](./repositorio-e-estrutura.md) | Criar a pasta `fundamentos/` e organizar exercícios por tópico em arquivos `.js`. |
 
 ---
 
