@@ -430,24 +430,149 @@ if (statusCode === 200) {
 
 ## Exercícios sugeridos
 
-### Exercício 1
+Crie um arquivo estruturasCondicinais.js e cole o seguinte conteúdo:
 
-Crie uma condição para verificar se um usuário é maior de idade.
+```js
+/**
+ * EXERCÍCIO 1 - Verificando a maioridade
+ *
+ * Instruções:
+ * 1. Crie uma variável chamada idade.
+ * 2. Utilize uma estrutura if.
+ * 3. Se a idade for maior ou igual a 18, exiba:
+ *
+ * "Você é maior de idade."
+ *
+ * Exemplo:
+ * idade = 20
+ * Saída: Você é maior de idade.
 
-### Exercício 2
+*/
 
-Crie uma condição para verificar os seguintes status code:
+// Implemente a partir daqui
 
-- status 200
-- status 404
-- status 500
+/**
+ * EXERCÍCIO 2 - Aprovado ou Reprovado
+ *
+ * Instruções:
+ * 1. Crie uma variável chamada nota.
+ * 2. Utilize uma estrutura if/else.
+ * 3. Se a nota for maior ou igual a 7, exiba:
+ *
+ * "Aluno aprovado."
+ *
+ * 4. Caso contrário, exiba:
+ *
+ * "Aluno reprovado."
+ *
+ * Exemplo:
+ * nota = 8
+ * Saída: Aluno aprovado.
+ */
 
-### Exercício 3
+// Implemente a partir daqui
 
-Crie uma condição que permita login apenas se:
+/**
+ * EXERCÍCIO 3 - Classificação de Temperatura
+ *
+ * Instruções:
+ * 1. Crie uma variável chamada temperatura.
+ * 2. Utilize if, else if e else.
+ * 3. Exiba:
+ *
+ * - "Frio" se a temperatura for menor que 15.
+ * - "Agradável" se a temperatura estiver entre 15 e 25.
+ * - "Quente" se a temperatura for maior que 25.
+ *
+ * Exemplo:
+ * temperatura = 28
+ * Saída: Quente
+ */
 
-- usuário estiver ativo
-- senha estiver correta
+// Implemente a partir daqui
+
+/**
+ * EXERCÍCIO 4 - Verificando acesso ao sistema
+ *
+ * Instruções:
+ * 1. Crie as variáveis:
+ *
+ * const usuarioAtivo = true;
+ * const senhaCorreta = true;
+ *
+ * 2. Utilize um operador lógico (&&).
+ * 3. O acesso só deve ser liberado quando as duas condições forem verdadeiras.
+ * 4. Exiba:
+ *
+ * "Acesso permitido."
+ *
+ * ou
+ *
+ * "Acesso negado."
+ *
+ * Exemplo:
+ * usuarioAtivo = true
+ * senhaCorreta = false
+ *
+ * Saída: Acesso negado.
+ */
+
+// Implemente a partir daqui
+
+/**
+ * EXERCÍCIO 5 - Sistema de desconto
+ *
+ * Instruções:
+ * 1. Crie uma variável chamada valorCompra.
+ * 2. Utilize if, else if e else.
+ * 3. Aplique as seguintes regras:
+ *
+ * - Acima de R$ 500 → desconto de 20%
+ * - Acima de R$ 200 → desconto de 10%
+ * - Até R$ 200 → sem desconto
+ *
+ * 4. Exiba qual desconto foi aplicado.
+ *
+ * Exemplo:
+ * valorCompra = 650
+ * Saída: Desconto de 20% aplicado.
+ */
+
+// Implemente a partir daqui
+
+/**
+ * DESAFIO EXTRA - Entrada no evento
+ *
+ * Instruções:
+ * 1. Crie as variáveis:
+ *
+ * const idade = 25;
+ * const possuiIngresso = true;
+ *
+ * 2. Uma pessoa só pode entrar no evento quando:
+ *
+ * - Tiver 18 anos ou mais
+ * E
+ * - Possuir ingresso
+ *
+ * 3. Utilize operadores relacionais e lógicos.
+ * 4. Exiba:
+ *
+ * "Entrada permitida."
+ *
+ * ou
+ *
+ * "Entrada não permitida."
+ *
+ * Exemplo:
+ * idade = 16
+ * possuiIngresso = true
+ *
+ * Saída: Entrada não permitida.
+ */
+
+// Implemente a partir daqui
+```
 
 ---
 
