@@ -19,7 +19,7 @@ A ideia é começar do absoluto básico e evoluir gradualmente até temas mais a
 O treinamento seguirá uma abordagem progressiva:
 
 1. Fundamentos de lógica e programação
-2. Automação de APIs
+2. Testes de API
 3. Fundamentos Web
 4. Automação Web com Playwright
 5. Estruturação profissional de frameworks
@@ -213,4 +213,4 @@ Automação é uma habilidade construída com repetição e prática contínua.
 
 ## Próximos passos
 
-Comece pela **Visão geral** dos fundamentos, depois por **Algoritmos**, e avance na ordem da sidebar até fechar o módulo; em seguida siga para **Ambiente de automação** e, mais adiante, **Automação de APIs**.
+Comece pela **Visão geral** dos fundamentos, depois por **Algoritmos**, e avance na ordem da sidebar até fechar o módulo; em seguida siga para **Ambiente de automação** e, mais adiante, **Testes de API**.

@@ -37,7 +37,7 @@ trilha-qa-exercicios/
 │   └── arrays.js
 ```
 
-Conforme avançar para outros módulos (Automação de APIs, Web, etc.), crie pastas no mesmo padrão — por exemplo `automacao-apis/` — com arquivos alinhados aos tópicos estudados.
+Conforme avançar para outros módulos (Testes de API, Web, etc.), crie pastas no mesmo padrão — por exemplo `automacao-apis/` — com arquivos alinhados aos tópicos estudados.
 
 ---
 
@@ -208,4 +208,4 @@ Cada vez que concluir exercícios de um tópico, abra (ou crie) o arquivo corres
 | Executar | `node fundamentos/estruturas-condicionais.js` |
 | Referência no repo | `exemplos/fundamentos/estruturas-condicionais.js` |
 
-Com essa estrutura, você mantém a prática alinhada à ordem da trilha e revisita exercícios antigos com facilidade. O próximo passo natural é aplicar os fundamentos nos módulos práticos, começando por **Automação de APIs**.
+Com essa estrutura, você mantém a prática alinhada à ordem da trilha e revisita exercícios antigos com facilidade. O próximo passo natural é aplicar os fundamentos nos módulos práticos, começando por **Testes de API**.

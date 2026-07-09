@@ -191,4 +191,4 @@ No Windows é comum ver avisos sobre fim de linha. Manter a opção padrão do i
 | Validar | Fechar e reabrir o terminal; `git --version` |
 | Configurar | `git config --global user.name` e `user.email` |
 
-Com **Node.js**, **VS Code** e **Git** prontos, pratique rodando um `.js` em **[Executar arquivos JavaScript](./executar-javascript.md)**. Depois, siga para **[Repositório e estrutura de pastas](./repositorio-e-estrutura.md)** quando quiser entender como os projetos são organizados.
+Com **Node.js**, **VS Code** e **Git** prontos, instale o **[Bruno](./instalacao-bruno.md)** — cliente de API para testes manuais — e depois pratique rodando um `.js` em **[Executar arquivos JavaScript](./executar-javascript.md)**.

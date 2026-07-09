@@ -616,4 +616,4 @@ Crie o arquivo **`fundamentos/objetos.js`** na sua pasta de exercícios (veja **
 4. Listar chaves de um subobjeto com `Object.keys`.
 5. Serializar e parsear com `JSON.stringify` / `JSON.parse`.
 
-Objetos são a base para trabalhar com **JSON** na trilha de **Automação de APIs**. Em seguida, veja **[Arrays](./arrays.md)** — listas ordenadas que aparecem dentro de quase todo payload (itens, usuários, cenários).
+Objetos são a base para trabalhar com **JSON** na módulo de **Testes de API**. Em seguida, veja **[Arrays](./arrays.md)** — listas ordenadas que aparecem dentro de quase todo payload (itens, usuários, cenários).

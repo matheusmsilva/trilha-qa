@@ -499,4 +499,4 @@ Crie o arquivo **`fundamentos/arrays.js`** na sua pasta de exercícios (veja **[
 4. Extrair todos os IDs com `map`.
 5. Verificar se existe cenário com tag `"smoke"` usando `some`.
 
-Arrays e objetos são os formatos mais comuns em **JSON** — juntos, eles cobrem a maior parte das massas e respostas que você vai validar na trilha de **Automação de APIs**.
+Arrays e objetos são os formatos mais comuns em **JSON** — juntos, eles cobrem a maior parte das massas e respostas que você vai validar na módulo de **Testes de API**.
